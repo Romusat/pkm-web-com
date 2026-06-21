@@ -1,0 +1,49 @@
+/* =========================
+   ANIMASI MENU NAVBAR
+========================= */
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 0;
+  font-weight: 600;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+/* hover text */
+.nav-link:hover {
+  color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* garis bawah animasi */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #16a34a;
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* saat diklik */
+.nav-link:active {
+  transform: scale(0.96);
+}
+
+/* active page */
+.nav-link.active {
+  color: #15803d;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
