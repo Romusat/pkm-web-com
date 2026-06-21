@@ -50,14 +50,14 @@ include '../includes/header.php';
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
                             📞 Telepon
                         </h3>
-                        <p>0857 1547 0971</p>
+                        <p>0857-7407-4018</p>
                     </div>
 
                     <div>
                         <h3 class="font-bold text-lg text-gray-900 mb-2">
                             ✉️ Email
                         </h3>
-                        <p>info@pondok.com</p>
+                        <p>sirojulqur'an123@gmail.com</p>
                     </div>
 
                     <div>

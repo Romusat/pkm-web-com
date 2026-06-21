@@ -779,7 +779,7 @@ $profilLengkap = $conn->query("SELECT * FROM profil LIMIT 1")->fetch_assoc();
 <!-- FLOATING WHATSAPP -->
 <!-- ========================================= -->
 
-<a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-600
+<a href="https://wa.me/6285774074018" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-600
           text-white rounded-full shadow-2xl w-16 h-16 flex items-center
           justify-center text-3xl transition duration-300 hover:scale-110">
 
@@ -792,8 +792,22 @@ $profilLengkap = $conn->query("SELECT * FROM profil LIMIT 1")->fetch_assoc();
 <!-- ========================================= -->
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const popup = document.getElementById('popupPengumuman');
+
+    // Jika sudah pernah ditutup, jangan tampilkan
+    if (localStorage.getItem('popupPengumumanClosed') === 'true') {
+        popup.style.display = 'none';
+    }
+
+});
+
 function closePopup() {
-    document.getElementById("popupPengumuman").style.display = "none";
+    document.getElementById('popupPengumuman').style.display = 'none';
+
+    // Simpan status bahwa popup sudah ditutup
+    localStorage.setItem('popupPengumumanClosed', 'true');
 }
 </script>
 
